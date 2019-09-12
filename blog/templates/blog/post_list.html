@@ -4,25 +4,11 @@
     </head>
     <body>
         <div>
-            <h1><a href="/">Inicio de la desviaciòn</a></h1>
+            <h1><a href = "/" > Django chicas Blog </a></h1>
         </div>
-
+        {% for post in posts %} 
         <div>
-            <p>published: 31.08.1989, 06:13</p>
-            <h2><a href="">Descripciòn de los hechos</a></h2>
-            <p><em>Un dìa indiferente, de acontecimientos coridianos,<br></br> en condiciones normales y en un lecho con la misma probabilidad de ocurriencia como la de las mayorìa, alguièn tan creyentemente normal, pare a este error.</em></p>
-        </div>
-
-        <div>
-            <p><strong>published: 31.12.2001, 23:57</strong></p>
-            <h2><a href="">Absulutanente destinado</a></h2>
-            <p>Entre regocijo y aplomo ajeno debate sus incumplidos deseos, enredado como estas palabras, y desde ahì nada a cambiado.</p>
-        </div>
-        
-        <div>
-            <p>published: 11.09.2019, 18:07</p>
-            <h3><a href="">letàrgica llegada</a></h3>
-            <p>una visible discreciòn describe el desazòn destructible de un despotico desepòsito con 30 ruedas que se desliza</p>
-        </div>
+            <p> publicado: {{ post.published_date }} </p>
+            <h1><a href = "">{{ post.title }} </a></h1><p>{{ post.text|linebreaksbr }} </p></div >{% endfor %}
     </body>
 </html>
