@@ -1,0 +1,13 @@
+Blog para postear artículos.
+
+Este blog te permite:
+    -crear articulos y almacenarlos en un borrador para ser publicados luego de una revisión. 
+    -permite editar y eliminar los postos publicados siempre y cuando estés autenticado
+    
+
+
+Herramientas:
+
+    -Python 3.8.1
+    -Django 3.0.2
+    -Git - GitHub
