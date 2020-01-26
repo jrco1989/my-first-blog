@@ -12,6 +12,8 @@ urlpatterns = [
     path ('accounts/login/', views.login , name='login'),
     path('accounts/logout', views.partida, name='logout'),
     path('comment/<int:pk>/', views.add_comment_to_post, name='add_comment_to_post'),
+    path('approve/<int:pk>/', views.comment_approve, name='comment_approve'),
+    path('remove/<int:pk>/', views.comment_remove, name='comment_remove'),
     #path('accounts/login/', views.LoginView.as_view(), name='login'),
     #path('accounts/logout/', views.LogoutView.as_view(next_page='/'), name='logout'),
 ]

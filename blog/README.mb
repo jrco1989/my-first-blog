@@ -4,7 +4,7 @@ Este blog te permite:
     -crear articulos y almacenarlos en un borrador para ser publicados luego de una revisión. 
     -editar y eliminar los posts publicados siempre y cuando estés autenticado.
     -login y logout a los usuarios registrados para que puedan alterar el contenido.
-    -a los visitantes comentar el blog y solo los usuarios autenticados podrán modificarlos y aprovarlos 
+    -a los visitantes comentar el blog y solo los usuarios autenticados podrán eliminarlos o aprovarlos 
 
 
     
