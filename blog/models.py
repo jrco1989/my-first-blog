@@ -17,6 +17,25 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+class Comment (models.Model):
+    post = models.ForeignKey(Post, 
+                            on_delete=models.CASCADE,
+                            related_name='comments') #nos permite acceder a los comentarios desde el modelo Post.
+    author= models.CharField(max_length=50)
+    text= models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    approved_comment = models.BooleanField(default=False)
+    
+    def approve(self):
+        self.approved_comment = True
+        self.save()
+
+    def __str__(self):
+         return self.text
+
+    
+
 
 
 
