@@ -9,4 +9,8 @@ urlpatterns = [
     path('post_draft_list/', views.post_draft, name='post_draft'),
     path('post/<pk>/publish/', views.post_publish, name='post_publish'),
     path('post/<pk>/remove/', views.post_remove, name='post_remove'),
+    path ('accounts/login/', views.login , name='login'),
+    path('accounts/logout', views.partida, name='logout')
+    #path('accounts/login/', views.LoginView.as_view(), name='login'),
+    #path('accounts/logout/', views.LogoutView.as_view(next_page='/'), name='logout'),
 ]
